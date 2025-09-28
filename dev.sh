@@ -1,2 +1,2 @@
-PORT="${PORT:-9099}"
-uvicorn main:app --port $PORT --host 0.0.0.0 --forwarded-allow-ips '*' --reload
+PORT="${PORT:-10086}"
+python -m uvicorn main:app --port $PORT --host 127.0.0.1 --forwarded-allow-ips '*' --reload
